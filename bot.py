@@ -1,5 +1,7 @@
-from telebot import TeleBot  # Correct import for pyTelegramBotAPI
-import telegram
+import os
+import sqlite3
+import requests
+from telebot import TeleBot, types  # This is the correct import
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext, ConversationHandler, CallbackQueryHandler
 import requests
